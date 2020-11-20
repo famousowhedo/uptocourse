@@ -1,0 +1,39 @@
+{% extends 'famous/base_3.html' %}
+{% block content %}
+
+<section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+    <h1><span>Course</span></h1>
+    <span class="title-bg">posts</span>
+</section>
+<!-- Page Title Ends -->
+<!-- Main Content Starts -->
+<section class="main-content revealator-slideup revealator-once revealator-delay1">
+    <div class="container">
+        <div class="row">
+            <!-- Article Starts -->
+            <article class="col-12">
+                <!-- Meta Starts -->
+                <div class="meta open-sans-font">
+                    <span><i class="fa fa-user"></i>{{object.author}}</span>
+                    <span class="date"><i class="fa fa-calendar"></i>{{object.date}}</span>
+                    <span><i class="fa fa-tags"></i> Django, technology, economy, design</span>
+                </div>
+                <!-- Meta Ends -->
+                <!-- Article Content Starts -->
+                <h1 class="text-uppercase text-capitalize">{{object.title}}</h1>
+                <img src="{{object.img.url}}" class="img-fluid" alt="Blog image"/>
+                <div class="blog-excerpt open-sans-font pb-5">
+                    <p>{{object.content}}</p>
+                
+             <a href="{{object.link_to_course}}"><button type="submit" class="btn btn-contact">Errol Course</button></a>
+            
+                </div>
+                <!-- Article Content Ends -->
+            </article>
+            <!-- Article Ends -->
+         
+        </div>
+    </div>
+</section>
+{% endblock content %}
+<!-- Template
